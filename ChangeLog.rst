@@ -1,4 +1,4 @@
-0.59.0 (unreleased)
+0.59.0 (2023-12-13)
 *******************
 
 Note worthy changes
@@ -25,6 +25,8 @@ Note worthy changes
 - Added a setting ``ACCOUNT_EMAIL_UNKNOWN_ACCOUNTS`` to disable sending of
   emails to unknown accounts.
 
+- You can now override the MFA forms via the ``MFA_FORMS`` setting.
+
 
 Backwards incompatible changes
 ------------------------------
@@ -32,7 +34,7 @@ Backwards incompatible changes
 - The account adapter method ``should_send_confirmation_mail()`` signature
   changed. It now takes an extra ``signup`` (boolean) parameter.
 
-- Removed OAuth 1.0 based Bitbucket provider.
+- Removed OAuth 1.0 based Bitbucket provider and LinkedIn provider.
 
 
 0.58.2 (2023-11-06)
